@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-html{
+html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   width: 100%;
   min-width: 320px;
   background-color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex; /* Use flexbox to align children */
   flex-direction: column;
   padding-top: 20px; /* Add top padding to avoid overlap with the fixed header */
@@ -33,7 +33,7 @@ body {
   align-items: center;
   z-index: 100;
 }
-.main-container{
+.main-container {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ body {
   font-weight: 300;
   margin-right: 60px;
 }
-.navbar{
+.navbar {
   display: flex;
 }
 .navbar a {
@@ -91,7 +91,7 @@ body {
   text-decoration: none;
   margin-left: 40px;
 }
-#bars-icon{
+#bars-icon {
   position: relative;
   color: black;
   font-size: 18px;
@@ -119,53 +119,51 @@ body {
   grid-template-rows: 200px 100px 40px;
   grid-gap: 30px;
 
-  grid-template-areas: 
-            "header header"
-            "box-1 box-2"
-            "search-bar search-bar";
-
-  
+  grid-template-areas:
+    "header header"
+    "box-1 box-2"
+    "search-bar search-bar";
 }
-.hug-header{
+.hug-header {
   grid-area: header;
   padding-left: 20px;
   padding-top: 30px;
 }
-.hug-box-1{
+.hug-box-1 {
   grid-area: box-1;
   padding-left: 20px;
 }
-.hug-box-2{
+.hug-box-2 {
   grid-area: box-2;
   padding-left: 20px;
   margin-right: 50px;
 }
-.hug-p-1{
+.hug-p-1 {
   padding-left: 18px;
   font-size: 1em;
 }
-.hug-p-2{
+.hug-p-2 {
   text-align: start;
   padding-left: 5px;
   font-size: 1em;
 }
-.image-jenny{
+.image-jenny {
   height: 500px;
   width: auto;
 }
-.image-guiana{
+.image-guiana {
   height: 200px;
   width: auto;
 }
-.image-treskilling{
+.image-treskilling {
   height: 200px;
   width: auto;
 }
-.image-washington{
+.image-washington {
   height: 200px;
   width: auto;
 }
-.image-container{
+.image-container {
   position: relative;
   justify-content: end;
   width: 700px;
@@ -173,24 +171,24 @@ body {
   background-color: transparent;
   display: grid;
 }
-.header-one{
+.header-one {
   font-size: 3.8em;
 }
-.search-bar{
+.search-bar {
   grid-area: search-bar;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 350px;
   height: 50px;
-  border-radius: .5em;
+  border-radius: 0.5em;
   overflow: hidden;
   background: #fff;
 }
-.search-p{
+.search-p {
   padding-left: 5px;
 }
-.search{
+.search {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -198,5 +196,3 @@ body {
   height: 35px;
   width: 35px;
 }
-
-

@@ -98,7 +98,6 @@
   /*grid-template-rows: [row-two-start] 500px [row-two-end];
     grid-template-columns: [one-start] 416px [one-end two-start] 416px [two-end three-start] 416px [three-end]; /* grid-template-columns: repeat(4,[col-start] 312px [col-end]) */
 
-  overflow: hidden;
 }
 .about-us-card {
   display: flex;
