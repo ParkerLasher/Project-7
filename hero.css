@@ -86,8 +86,8 @@
   height: 600px;
   background-color: white;
   border-radius: 1em; /* rounds the border edges */
-  grid-template-rows: 150px 400px;
-  grid-template-columns: 416px 416px 416px;
+  grid-template-rows: 150px 450px;
+  grid-template-columns: 410px 410px 410px;
   grid-gap: 10px;
 
   grid-template-areas:
@@ -135,7 +135,7 @@
   font-size: 3em;
 }
 .text {
-    color: #9c9b9b;
+  color: #9c9b9b;
   font-size: 1.5em;
   padding-top: 10px;
   text-align: center;
@@ -246,12 +246,6 @@
   font-size: 3em;
 }
 
-.main-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1440px;
-}
 .fifth-container{
   display: grid;
   justify-content: space-between;
@@ -261,7 +255,7 @@
   height: 400px;
   background-color: #d5d6d8;
   grid-template-rows: [row-start]400px[row-end];
-  grid-template-columns: [first-col-start] 300px [first-col-end second-col-start] 300px [second-col-end third-col-start] 300px [third-col-end fourth-col-start] 300px [fourth-col-end];
+  grid-template-columns: [first-col-start] 25% [first-col-end second-col-start] 25% [second-col-end third-col-start] 25% [third-col-end fourth-col-start] 25% [fourth-col-end];
 }
 .social-container{
   grid-row: row-start / row-end;
