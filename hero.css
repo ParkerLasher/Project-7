@@ -82,7 +82,8 @@
   margin-bottom: 50px;
   align-items: center;
   justify-items: center;
-  width: 1248px;
+  justify-content: center;
+  width: 100%;
   height: 600px;
   background-color: white;
   border-radius: 1em; /* rounds the border edges */
