@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex; /* Use flexbox to align children */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding-top: 20px; /* Add top padding to avoid overlap with the fixed header */
+}
+.header {
+  position: absolute; /* this is so the nav bar doesn't move with the screen. */
+  background-color: transparent;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  white-space: nowrap;
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  margin-right: 60px;
+}
+.navbar{
+  display: flex;
+}
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: darkgrey;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 60px; /* this is what puts space between the tabs. */
+}
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+.navbar a:hover::before {
+  width: 100%;
+}
+#home-button {
+  color: rgb(0, 0, 0);
+}
+#cart-icon {
+  position: relative;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 520px;
+}
+#person-icon {
+  position: relative;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 40px;
+}
+#bars-icon{
+  position: relative;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  width: 1248px;
+  height: 512px;
+  background-color: #bbeaed;
+  border-radius: 1em; /* rounds the border edges */
+}
+.hug-container {
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: max-content max-content 100px;
+  grid-template-rows: 200px 100px 40px;
+  grid-gap: 30px;
+
+  grid-template-areas: 
+            "header header"
+            "box-1 box-2"
+            "search-bar search-bar";
+
+  
+}
+.hug-header{
+  grid-area: header;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.hug-box-1{
+  grid-area: box-1;
+  padding-left: 20px;
+}
+.hug-box-2{
+  grid-area: box-2;
+  padding-left: 20px;
+  margin-right: 50px;
+}
+.hug-p-1{
+  padding-left: 18px;
+  font-size: 1em;
+}
+.hug-p-2{
+  text-align: start;
+  padding-left: 5px;
+  font-size: 1em;
+}
+.image-jenny{
+  height: 500px;
+  width: auto;
+}
+.image-guiana{
+  height: 200px;
+  width: auto;
+}
+.image-treskilling{
+  height: 200px;
+  width: auto;
+}
+.image-washington{
+  height: 200px;
+  width: auto;
+}
+.image-container{
+  position: relative;
+  justify-content: end;
+  width: 700px;
+  height: 500px;
+  background-color: transparent;
+  display: grid;
+}
+.header-one{
+  font-size: 3.8em;
+}
+.search-bar{
+  grid-area: search-bar;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+  height: 50px;
+  border-radius: .5em;
+  overflow: hidden;
+  background: #fff;
+}
+.search-p{
+  padding-left: 5px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #bbeaed;
+  height: 35px;
+  width: 35px;
+}
+.main-container{
+  padding-top: 60px;
+}
+
+
