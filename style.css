@@ -18,11 +18,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex; /* Use flexbox to align children */
   flex-direction: column;
-  padding-top: 20px; /* Add top padding to avoid overlap with the fixed header */
+  /*padding-top: 20px; /* Add top padding to avoid overlap with the fixed header */
   margin: 0;
 }
 .header {
-  position: absolute; /* this is so the nav bar doesn't move with the screen. */
+  position: relative; /* this is so the nav bar doesn't move with the screen. */
   background-color: transparent;
   width: 100%;
   top: 0px;
@@ -54,7 +54,7 @@ body {
 .navbar a {
   position: relative;
   font-size: 18px;
-  color: darkgrey;
+  color: rgb(129, 128, 128);
   font-weight: 500;
   text-decoration: none;
   margin-left: 60px; /* this is what puts space between the tabs. */
@@ -183,16 +183,52 @@ body {
   height: 50px;
   border-radius: 0.5em;
   overflow: hidden;
-  background: #fff;
 }
-.search-p {
-  padding-left: 5px;
+#search-input{
+  height:50px;
+  width: 300px;
 }
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 1172px;
+  top: 100%;
   background-color: #bbeaed;
-  height: 35px;
-  width: 35px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-menu a:hover {
+  background-color: #f1f1f1
+}
+#bars-icon {
+  position: relative; /* Ensure this is here */
+}
+.see-more-button{
+  text-decoration: none;
+  color: black;
+}
+.exlpore-button{
+  text-decoration: none;
+  color: black;
+}
+.logo-image{
+  width: 200px;
+  height: 200px;
+}
+.header-logo{
+  width: 50px;
+  height: 50px;
+}
+a.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
